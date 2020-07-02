@@ -18,8 +18,8 @@ services:
     image: goergch/weathertelegraf:latest
     container_name: telegraf
     environment:
-      WEATHER_API_KEY: "0fda6af6f86ff00da52dc497f0675b56"
-      WEATHER_CITY_ID: "2936705"
+      WEATHER_API_KEY: "INSERT_OPEN_WEATHER_API_KEY_HERE"
+      WEATHER_CITY_ID: "2936705" #Ditzingen
       WEATHER_LANGUAGE_ID: "de"
     links:
       - influxdb
