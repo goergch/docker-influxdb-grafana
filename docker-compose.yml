@@ -15,7 +15,7 @@ services:
       # sudo mkdir -p /srv/docker/influxdb/data
       - influxdb_data:/var/lib/influxdb
   telegraf:
-    image: telegraf:latest
+    image: goergch/weathertelegraf:latest
     container_name: telegraf
     environment:
       WEATHER_API_KEY: "0fda6af6f86ff00da52dc497f0675b56"
